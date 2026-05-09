@@ -16,7 +16,7 @@ option(HEADER_BUILD "Use full kernel tree for compilation database and build wit
                      otherwise use HEADER_ONLY_KERNEL_DIR for both compilation database and building" OFF)
 option(CLANGD "Remove compile flags that are not understood by clangd" ON)
 option(DKMS "Generate dkms.conf by configuring dkms.conf.in and enable dkms support" ON)
-option(NO_PLATFORM_PROFILE "Do not include platform profile control in the module" ON)
+option(NO_PLATFORM_PROFILE "Do not include platform profile control in the module" OFF)
 # tell cmake to generate JSON compilation database
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
